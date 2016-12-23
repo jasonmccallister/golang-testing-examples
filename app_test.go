@@ -24,7 +24,3 @@ func TestCanAddStringsToAnArray(test *testing.T) {
 		test.Log("Saw two!")
 	}
 }
-
-func TestAFailingTest(test *testing.T) {
-	test.Error("This test always fails")
-}
