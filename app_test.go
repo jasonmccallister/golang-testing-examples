@@ -9,3 +9,18 @@ func TestCanSubtractOneFromANumber(test *testing.T) {
 		test.Log("Can subtract a number from any int!")
 	}
 }
+
+func TestCanAddStringsToAnArray(test *testing.T) {
+	var arr = addStringsToArray("one", "two")
+
+	if arr[0] != "one" {
+		test.Error("Expected one, got ", arr[0], " instead...")
+	} else {
+		test.Log("Saw one!")
+	}
+	if arr[1] != "two" {
+		test.Error("Expected two, got ", arr[1], " instead...")
+	} else {
+		test.Log("Saw two!")
+	}
+}
